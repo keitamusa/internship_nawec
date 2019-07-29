@@ -45,34 +45,7 @@ function residualSquare(arr) {
   return result;
 }
 
-function similarities(...arr) {
-  var cosine_similarity = [];
 
-  /**
- * passing unknown number of parameters
- * assuming each parameter is a document.
- * 
- * 1 -> index it
- * 2 -> process each index of a document
- */
-  for (var index = 0; index < arr.length; index++) {
-    /**
-     * now process each document
-     */
-    for (var doc = 0; doc < arr[index].length; doc++) {
-      /**
-       * get the cosine similarities for each document
-       */
-      cosine_similarity[doc] = Math.cos(arr[doc]);
-    }
-    return cosine_similarity;
-  }
-
-}
-
-cos = similarities(2, 3, 4, 5);
-let x = [5.2, 5.7, 5.0, 4.2];
-let y = [1, 2, 3, 4];
 
 let x_residual = [];
 let y_residual = [];
@@ -107,5 +80,3 @@ let r2 = Math.sqrt(((sum_of_x_by_y_residual) / (std_dev_of_x * std_dev_of_y)), 2
 // console.log(std_dev_of_y);
 
 // console.log(r2);
-console.log("computing the cosine similarities");
-console.log(cos);
