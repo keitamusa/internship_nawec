@@ -34,7 +34,6 @@ function standardDev(arr1, fig) {
   let std = Math.sqrt((fig / arr_length), 2)
   return std;
   // var su = sum(residal(arr));
-
 }
 
 function residualSquare(arr) {
