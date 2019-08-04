@@ -103,7 +103,6 @@ function xy_product(arr1, arr2) {
     let data = [];
     for (let i = 0; i < arr1.length; i++) {
         data.push(arr1[i] * arr2[i]);
-        console.log(data);
     }
     let total = sum(data);
     return total;
